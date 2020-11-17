@@ -2,13 +2,41 @@
   text-align: center;
 }
 
+.home-not-loaded{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#galaxy{
+  height: 500px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
 .shimmer {
   position: absolute;
   font-family: 'Fredericka the Great', cursive;
   font-weight: 300;
   font-size: 50px;
   margin: 0 auto;
-  padding: 0 140px 0 0;
   display: inline;
   margin-bottom: 0;
 }
@@ -37,6 +65,41 @@
   background-position: 0 0;
   background-color: #222;
 }
+
+.shimmer2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 300;
+  font-size: 50px;
+  margin: 0 auto;
+  display: inline;
+  margin-bottom: 0;
+}
+.shimmer2 {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
 @-moz-keyframes shimmer {
   0% {
     background-position: top left;
@@ -125,5 +188,62 @@
 */
 
 @media only screen and (max-width: 750px) {
+  .shimmer {
+    position: absolute;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0 auto;
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  #daily-image-description-title{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 25px;
+  }
+
+
+#daily-image-description-explanation{
+  width:80%;
+  margin: auto;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 20px;
+}
+
+#star-title{
+  margin-top: 80px;
+  color:white;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 20px;
+}
+
+#updated-title{
+  color:white;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#galaxy{
+  height: 400px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+.shimmer2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 300;
+  font-size: 40px;
+  margin: 0 auto;
+  display: inline;
+  margin-bottom: 0;
+}
 
 }
