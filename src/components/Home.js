@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import Footer from "./Footer"
 
 
 
@@ -25,6 +26,13 @@ const Home = () => {
         <div>
             <h1 className="shimmer" >Daily Star Gaze</h1>
             <img src={dailyImage.hdurl} id='home-daily-image' alt='daily star gaze' />
+            <div className='daily-image-description'>
+                <p>{dailyImage.title}</p>
+                <p>{dailyImage.explanation}</p>
+                <p>Last Updated: {dailyImage.date.split('-')[1]}/{dailyImage.date.split('-')[2]}/{dailyImage.date.split('-')[0]}</p>
+            </div>
+            <img src={require("../images/peyton.svg")} />
+            <Footer />
         </div>
     )
 }
