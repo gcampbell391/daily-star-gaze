@@ -78,7 +78,52 @@
   color:white;
 }
 
-.footer{
-  color:white;
+#daily-image-description-title{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 40px;
 }
 
+#daily-image-description-explanation{
+  width:80%;
+  margin: auto;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 25px;
+}
+
+.footer{
+  color:white;
+  font-family: 'Big Shoulders Inline Text', cursive;
+
+}
+
+#peyton-star{
+  margin-bottom: 50px;
+  width:300px;
+}
+
+#star-title{
+  margin-top: 80px;
+  color:white;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 25px;
+}
+
+#updated-title{
+  color:white;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#hr{
+  width:60%;
+  margin-top: 50px;
+}
+
+/*
+  Mobile Responsiveness 
+*/
+
+@media only screen and (max-width: 750px) {
+
+}
