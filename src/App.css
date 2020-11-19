@@ -212,18 +212,18 @@
 }
 
 #star-title{
-  margin-top: 80px;
   color:white;
   font-family: 'Big Shoulders Inline Text', cursive;
-  font-size: 20px;
+  font-size: 15px;
   width: 80%;
   margin: auto;
+  margin-top: 80px;
 }
 
 #updated-title{
   color:white;
   font-family: 'Big Shoulders Inline Text', cursive;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 50px;
 }
 
