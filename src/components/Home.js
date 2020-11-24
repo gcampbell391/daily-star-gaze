@@ -35,7 +35,15 @@ const Home = () => {
             </div>
         )
     }
-
+    //Fixed black screen error
+    if (dailyImage.code === 404) {
+        return (
+            <div className='home-not-loaded'>
+                <h1 className="shimmer2" >{dailyImage.msg} yet...</h1>
+                <img src={galaxy} id='galaxy' alt='galaxy-loader' />
+            </div>
+        )
+    }
     return (
         <div>
             <h1 className="shimmer" >Daily Star Gaze</h1>
